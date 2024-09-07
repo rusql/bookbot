@@ -14,6 +14,7 @@ def print_report(book_path, book_text):
     character_list.sort(key=sort_on, reverse=True)
     print(f"--- Begin report of {book_path} ---")
     print(f"{word_count} words found in document")
+    print()
     for c in character_list:
         if c[0].isalpha():
             print(f"The {c[0]} character was found {c[1]} times")
